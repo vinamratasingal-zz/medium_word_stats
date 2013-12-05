@@ -152,13 +152,17 @@
 		echo "<li>Flesch Kinkaid Grade Level: ". $flesch_kinkaid_grade. "</li>"; 
 		?>
     </div>
+    	<div class="col-xs-1"> </div> 
+    	<div class="col-xs-11"> 
     	<h2> Here are the entries ordered by the Flesch Kincaid Ease! </h2>
     	<table class="table table-condensed"> 
     		<?php database_insert($text, $flesch_kinkaid_ease, $flesch_kinkaid_grade); ?>
-    	</table>
+    	</table> </div>
+    	<div class="col-xs-1"> </div> 
+    	<div class="col-xs-11"> 
     	<h2> Here are the entries ordered by the Flesch Kincaid Grade! </h2> 
     	<table class="table table-condensed"> 
     		<?php print_flesch_grade_levels(); }?>
-    	</table>
+    	</table> </div>
 </body> 
 </html> 
